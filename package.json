@@ -1,0 +1,23 @@
+{
+  "name": "vuesax-admin-dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Dashboard page found in uplabs and created for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jairovg/vuesax-admin-dashboard.git"
+  },
+  "keywords": [
+    "admin-dashboard"
+  ],
+  "author": "jairovg",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jairovg/vuesax-admin-dashboard/issues"
+  },
+  "homepage": "https://github.com/jairovg/vuesax-admin-dashboard#readme"
+}
