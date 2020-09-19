@@ -5,6 +5,7 @@
   "description": "Dashboard page found in uplabs and created for fun",
   "main": "index.js",
   "scripts": {
+    "commit": "cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,30 @@
   "bugs": {
     "url": "https://github.com/jairovg/vuesax-admin-dashboard/issues"
   },
-  "homepage": "https://github.com/jairovg/vuesax-admin-dashboard#readme"
+  "homepage": "https://github.com/jairovg/vuesax-admin-dashboard#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.1.1",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "commitizen": "^4.2.1",
+    "conventional-changelog-conventionalcommits": "^4.4.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.0",
+    "semantic-release": "^17.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
