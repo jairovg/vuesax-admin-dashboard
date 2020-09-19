@@ -1,6 +1,7 @@
 # VueJS Admin Dashboard Template
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 The purpose of this repo is to work in a study based project using the [Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template](https://www.uplabs.com/posts/vuesax-admin-dashboard-template-ecommerce-grid-page) which can be found in [UpLabs](https://www.uplabs.com/). There are not intentions to use it to sell, distribute or copy the original sourcecode, it's a just for fun project. The license used is the [Free Personal License](https://www.uplabs.com/premium/license).
 
