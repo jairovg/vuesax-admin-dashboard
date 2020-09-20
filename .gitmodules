@@ -1,0 +1,4 @@
+[submodule "build/lib"]
+  path = build/lib
+  url = https://github.com/jairovg/webpack-lib.git
+  branch = dev
