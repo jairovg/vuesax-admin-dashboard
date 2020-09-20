@@ -28,3 +28,13 @@ Run the following script in order to install all the modules used in this projec
 ```sh
 npm i
 ```
+
+## Run the application
+Run the following script in order to run the application
+```sh
+npm start
+```
+
+Once the application is running you can see the changes in `http://localhost:8080`.
+
+**NOTE:** The application gets refreshed with every single change made in the code.
