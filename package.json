@@ -39,7 +39,7 @@
     "nodemon": "^2.0.4",
     "semantic-release": "^17.1.2",
     "webpack-lib": "file:build/lib",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^5.1.4"
   },
   "dependencies": {
     "vue": "^2.6.12"

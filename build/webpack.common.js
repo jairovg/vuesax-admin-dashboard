@@ -1,4 +1,4 @@
-const wpMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const { utils, styles, javascript } = require('webpack-lib');
 const { build, index } = require('./webpack.constants').PATHS;
 
@@ -10,7 +10,7 @@ const meta = {
   'X-UA-Compatible': { "http-equiv": 'X-UA-Compatible', content: 'ie=edge' }
 };
 
-module.exports = wpMerge([
+module.exports = merge([
   {
     output: {
       path: build,

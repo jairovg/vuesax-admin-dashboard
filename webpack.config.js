@@ -1,4 +1,4 @@
-const wpMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const utils = require('webpack-lib').utils;
 const { ENV_PROD } = require('webpack-lib').constants;
 const { app, src, build } = require('./build/webpack.constants').PATHS;
@@ -8,7 +8,7 @@ module.exports = (mode) => {
   const envConfig = mode === ENV_PROD ?
     require('./build/webpack.prod')({ paths: src }) :
     require('./build/webpack.dev');
-  return wpMerge([
+  return merge([
     {
       mode,
       // Entry accepts a path or an object of entries.
