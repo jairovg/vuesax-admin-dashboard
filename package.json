@@ -37,6 +37,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.0",
     "nodemon": "^2.0.4",
+    "postcss": "^8.0.5",
     "semantic-release": "^17.1.2",
     "webpack-lib": "file:build/lib",
     "webpack-merge": "^5.1.4"
