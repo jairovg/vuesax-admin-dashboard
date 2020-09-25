@@ -13,3 +13,28 @@ The purpose of this repo is to work in a study based project using the [Vuexy - 
 * [React](https://reactjs.org/)
 * [Redux](https://redux.js.org/)
 * [Svelte](https://svelte.dev/)
+
+## Requirements
+Latest LTS version of [Node.js](https://nodejs.org/en/).
+
+## Setup
+This project uses [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for the webpack bundler, in order to setup the submodule you need to run the following commands
+
+```sh
+git submodule update --init --recursive
+```
+Run the following script in order to install all the modules used in this project
+
+```sh
+npm i
+```
+
+## Run the application
+Run the following script in order to run the application
+```sh
+npm start
+```
+
+Once the application is running you can see the changes in `http://localhost:8080`.
+
+**NOTE:** The application gets refreshed with every single change made in the code.

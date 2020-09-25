@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "commit": "cz",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wds": "webpack-dev-server --env development"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,14 @@
     "conventional-changelog-conventionalcommits": "^4.4.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.0",
-    "semantic-release": "^17.1.2"
+    "nodemon": "^2.0.4",
+    "postcss": "^8.0.5",
+    "semantic-release": "^17.1.2",
+    "webpack-lib": "file:build/lib",
+    "webpack-merge": "^5.1.4"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
   },
   "config": {
     "commitizen": {
