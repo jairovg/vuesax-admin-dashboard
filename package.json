@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/jairovg/vuesax-admin-dashboard#readme",
   "devDependencies": {
+    "@storybook/addon-docs": "^6.0.22",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/vue": "^6.0.22",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^5.0.1",
