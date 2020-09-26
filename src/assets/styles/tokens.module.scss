@@ -1,0 +1,24 @@
+/* Color scheme */
+$color-scheme-black: #000000;
+$color-scheme-gray-1: #2c2c2c;
+$color-scheme-gray-2: #4f4f4f;
+$color-scheme-gray-3: #979797;
+$color-scheme-gray-4: #bdbdbd;
+$color-scheme-gray-5: #ededed;
+$color-scheme-gray-6: #f9f9f9;
+$color-scheme-white: #ffffff;
+$color-scheme-orange: #ffa84c;
+$color-scheme-purple-1: #6f64f8;
+
+:export {
+  colorSchemeBlack: $color-scheme-black;
+  colorSchemeGray1: $color-scheme-gray-1;
+  colorSchemeGray2: $color-scheme-gray-2;
+  colorSchemeGray3: $color-scheme-gray-3;
+  colorSchemeGray4: $color-scheme-gray-4;
+  colorSchemeGray5: $color-scheme-gray-5;
+  colorSchemeGray6: $color-scheme-gray-6;
+  colorSchemeWhite: $color-scheme-white;
+  colorSchemeOrange: $color-scheme-orange;
+  colorSchemePurple1: $color-scheme-purple-1;
+}
