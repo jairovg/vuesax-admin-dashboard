@@ -30,6 +30,7 @@ npm i
 ```
 
 ## Run the application
+
 Run the following script in order to run the application
 ```sh
 npm start
@@ -38,3 +39,50 @@ npm start
 Once the application is running you can see the changes in `http://localhost:8080`.
 
 **NOTE:** The application gets refreshed with every single change made in the code.
+
+### Storybook
+
+Run the following script in order to run the story book tool in development mode
+
+```sh
+npm run storybook
+```
+
+## Folder structure
+
+```
+--| build
+--| dist
+--| src
+----| assets
+------| fonts
+------| images
+------| styles
+--------| layouts
+--------| pages
+--------| components
+----| layouts
+----| pages
+----| components
+----| store
+----| browser
+----| server
+--| stories
+--| tests
+```
+
+### build
+
+This folder contains the webpack config files that helps to bundle the application in the different environment. This config files are not used to override any [story book webpack integration](https://storybook.js.org/docs/react/configure/webpack)
+
+### dist
+
+The bundle output will be stored here. _Note_ that this folder is ignored in the [.gitignore](.gitignore) file
+
+### src
+
+The project source files
+
+### stories
+
+This folder contains all the [story book](https://storybook.js.org/) stories. The config is found in the [.storybook](.storybook/main.js) folder
