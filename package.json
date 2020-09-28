@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/jairovg/vuesax-admin-dashboard#readme",
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.0.22",
+    "@storybook/addon-controls": "^6.0.22",
     "@storybook/addon-docs": "^6.0.22",
     "@storybook/preset-scss": "^1.0.2",
     "@storybook/vue": "^6.0.22",
