@@ -1,0 +1,23 @@
+@import '~/assets/styles/tokens.module.scss';
+
+.button {
+  font-family: $text-default-family;
+  font-size: $text-default-size + 2;
+  font-weight: $text-default-weight;
+  line-height: $text-default-height;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__primary {
+    background-color: $color-background-button-primary;
+    color: $color-text-button-primary;
+    padding: $space-one-x + 2;
+    border-radius: $border-radius-soft;
+    transition: box-shadow $duration-three-x $timing-function-ease;
+
+    &:hover {
+      box-shadow: $shadow-button-primary;
+    }
+  }
+}
