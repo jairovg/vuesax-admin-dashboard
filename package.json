@@ -7,6 +7,7 @@
   "scripts": {
     "commit": "cz",
     "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
+    "storybook": "start-storybook -p 9009",
     "test": "echo \"Error: no test specified\" && exit 1",
     "wds": "webpack-dev-server --env development"
   },
@@ -24,6 +25,11 @@
   },
   "homepage": "https://github.com/jairovg/vuesax-admin-dashboard#readme",
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.0.22",
+    "@storybook/addon-controls": "^6.0.22",
+    "@storybook/addon-docs": "^6.0.22",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/vue": "^6.0.22",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^5.0.1",
