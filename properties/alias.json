@@ -1,0 +1,10 @@
+{
+    "space": {
+        "one-x": { "value": "16px" }
+    },
+    "shadow": {
+        "button": {
+            "primary": { "value": "0 8px 25px -8px {color.background.button.primary.value}" }
+        }
+    }
+}
