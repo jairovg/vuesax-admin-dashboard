@@ -1,4 +1,4 @@
-@import '~/assets/styles/tokens.module.scss';
+@import "~/assets/styles/tokens.module.scss";
 
 .button {
   font-family: $text-default-family;
@@ -6,7 +6,7 @@
   font-weight: $text-default-weight;
   line-height: $text-default-height;
   background-color: transparent;
-  border: none;
+  border: 0;
   cursor: pointer;
 
   &__primary {
