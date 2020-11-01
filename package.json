@@ -8,7 +8,7 @@
     "commit": "cz",
     "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
     "storybook": "start-storybook -p 9009",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "wds": "webpack-dev-server --env development"
   },
   "repository": {
