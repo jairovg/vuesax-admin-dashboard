@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const { styles, utils, images } = require('webpack-lib');
 const { merge } = require('webpack-merge');
 

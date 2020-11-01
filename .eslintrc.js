@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const { ESLINT_VUE_EXTENDS, ESLINT_VUE_PARSER } = require('webpack-lib').eslint;
 
 module.exports = {
@@ -11,8 +12,8 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   settings: {
     'import/resolver': {

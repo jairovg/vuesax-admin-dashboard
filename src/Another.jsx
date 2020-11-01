@@ -1,6 +1,7 @@
 import './another.scss';
 
 export default {
+  name: 'Another',
   data: () => ({
     message: 'Hello World !!!',
   }),
@@ -14,5 +15,4 @@ export default {
       </div>
     );
   },
-  name: 'Another'
 };

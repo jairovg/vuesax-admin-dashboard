@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'AnotherSample',
   data: () => ({
     message: 'Hello World !!!',
   }),
@@ -13,7 +14,6 @@ export default {
       </div>
     );
   },
-  name: 'AnotherSample'
 };
 </script>
 
