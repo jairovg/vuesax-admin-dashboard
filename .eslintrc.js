@@ -9,5 +9,16 @@ module.exports = {
     ecmaFeatures: {
       jsx: true
     }
-  }
+  },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.config.js',
+        env: {
+          NODE_ENV: 'production',
+          production: true,
+        },
+      },
+    },
+  },
 };
