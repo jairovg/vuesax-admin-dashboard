@@ -10,6 +10,7 @@
     "storybook": "start-storybook -p 9009",
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
     "wds": "webpack-dev-server --env development"
   },
   "repository": {
