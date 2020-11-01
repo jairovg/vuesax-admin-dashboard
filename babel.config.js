@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const { presetVue } = require('webpack-lib').babel;
 const { ENV_DEV } = require('webpack-lib').constants;
 
@@ -7,7 +8,7 @@ const { ENV_DEV } = require('webpack-lib').constants;
  */
 module.exports = {
   env: {
-    [ ENV_DEV ]: {
+    [ENV_DEV]: {
       presets: presetVue(),
     },
     test: {

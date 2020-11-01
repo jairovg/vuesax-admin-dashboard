@@ -16,7 +16,7 @@ $color-background-button-primary: $color-scheme-purple-1;
 
 $border-radius-soft: 8px;
 
-$text-default-family: 'Montserrat', sans-serif;
+$text-default-family: "Montserrat", sans-serif;
 $text-default-weight: 400;
 $text-default-size: 16px;
 $text-default-height: 21px;
@@ -26,11 +26,11 @@ $space-one-x: 16px;
 $shadow-button-primary: 0 8px 25px -8px $color-background-button-primary;
 
 // Animation related
-$duration-one-x: 0.1s;
-$duration-two-x: 0.2s;
-$duration-three-x: 0.3s;
-$duration-four-x: 0.4s;
-$duration-five-x: 0.5s;
+$duration-one-x: .1s;
+$duration-two-x: .2s;
+$duration-three-x: .3s;
+$duration-four-x: .4s;
+$duration-five-x: .5s;
 
 $timing-function-ease: cubic-bezier(.17,.67,.83,.67);
 

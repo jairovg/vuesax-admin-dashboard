@@ -1,6 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge');
 const { styles, images } = require('webpack-lib');
-const { ENV_PROD } = require('webpack-lib').constants;
 const glob = require('glob');
 const { build } = require('./webpack.constants').PATHS;
 

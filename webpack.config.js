@@ -1,13 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies, global-require */
 const { merge } = require('webpack-merge');
-const utils = require('webpack-lib').utils;
 const { ENV_PROD } = require('webpack-lib').constants;
-const { app, src, build } = require('./build/webpack.constants').PATHS;
+const { app, src } = require('./build/webpack.constants').PATHS;
 const commonConfig = require('./build/webpack.common');
 
 module.exports = (mode) => {
-  const envConfig = mode === ENV_PROD ?
-    require('./build/webpack.prod')({ paths: src }) :
-    require('./build/webpack.dev');
+  const envConfig = mode === ENV_PROD
+    ? require('./build/webpack.prod')({ paths: src })
+    : require('./build/webpack.dev');
   return merge([
     {
       mode,
@@ -16,9 +16,6 @@ module.exports = (mode) => {
       // convenient with more complex configurations.
       entry: {
         app,
-      },
-      resolve: {
-        extensions: ['*', '.js'],
       },
     },
     commonConfig,
