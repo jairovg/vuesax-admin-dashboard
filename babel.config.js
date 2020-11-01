@@ -1,4 +1,4 @@
-const { getDevelopmentConfig, getTestConfig, presetVue } = require('webpack-lib').babel;
+const { presetVue } = require('webpack-lib').babel;
 const { ENV_DEV } = require('webpack-lib').constants;
 
 /**
@@ -11,7 +11,22 @@ module.exports = {
       presets: presetVue(),
     },
     test: {
-      presets: [getTestConfig()],
+      presets: presetVue({
+        targets: {
+          node: 'current',
+        },
+      }),
+      plugins: [
+        [
+          'module-resolver',
+          {
+            root: ['./'],
+            alias: {
+              '~': './src',
+            },
+          },
+        ],
+      ],
     },
   },
 };
