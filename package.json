@@ -9,6 +9,7 @@
     "start": "nodemon --watch webpack.config.js --watch build --exec \"npm run wds\"",
     "storybook": "start-storybook -p 9009",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "wds": "webpack-dev-server --env development"
   },
   "repository": {
@@ -65,7 +66,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run test:coverage"
     }
   }
 }
