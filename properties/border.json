@@ -1,7 +1,7 @@
 {
-    "border": {
-        "radius": {
-            "soft": { "value": "8px" }
-        }
+  "border": {
+    "radius": {
+      "soft": { "value": "8px" }
     }
+  }
 }

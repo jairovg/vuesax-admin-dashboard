@@ -1,14 +1,14 @@
 {
-    "duration": {
-        "one-x": { "value": "0.1s" },
-        "two-x": { "value": "0.2s" },
-        "three-x": { "value": "0.3s" },
-        "four-x": { "value": "0.4s" },
-        "five-x": { "value": "0.5s" }
-    },
-    "timing":{
-        "function":{
-            "ease": { "value": "cubic-bezier(.17,.67,.83,.67)" }
-        }
+  "duration": {
+    "one-x": { "value": "0.1s" },
+    "two-x": { "value": "0.2s" },
+    "three-x": { "value": "0.3s" },
+    "four-x": { "value": "0.4s" },
+    "five-x": { "value": "0.5s" }
+  },
+  "timing":{
+    "function":{
+      "ease": { "value": "cubic-bezier(.17,.67,.83,.67)" }
     }
+  }
 }
