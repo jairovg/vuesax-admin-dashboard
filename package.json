@@ -14,6 +14,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --coverage --watch",
+    "tokens": "style-dictionary build --config ./style-dictionary.config.json",
     "wds": "webpack-dev-server --env development"
   },
   "repository": {
@@ -57,6 +58,7 @@
     "nodemon": "^2.0.4",
     "postcss": "^8.0.5",
     "semantic-release": "^17.1.2",
+    "style-dictionary": "^2.10.2",
     "vue-jest": "^3.0.7",
     "webpack-lib": "file:build/lib",
     "webpack-merge": "^5.1.4"

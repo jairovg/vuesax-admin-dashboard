@@ -1,0 +1,10 @@
+{
+  "text": {
+    "default": {
+      "family": { "value": "'Montserrat', sans-serif" },
+      "weight": { "value": "400" },
+      "size": { "value": "16px" },
+      "height": { "value": "21px" }
+    }
+  }
+}
