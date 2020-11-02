@@ -2,6 +2,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{js,vue}',
     '!src/index.js',
+    '!src/assets/tokens.js',
     '!**/node_modules/**',
     '!**/vendor/**',
   ],
