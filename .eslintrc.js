@@ -6,6 +6,7 @@ module.exports = {
   ignorePatterns: [
     '**/node_modules/**',
     'build/lib/**',
+    'src/assets/tokens.js',
   ],
   parser: ESLINT_VUE_PARSER,
   parserOptions: {
