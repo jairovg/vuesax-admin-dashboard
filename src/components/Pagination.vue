@@ -3,6 +3,16 @@ export default {
   name: 'Pagination',
   functional: true,
   props: {
+    /**
+     * @typedef Page
+     * @type {object}
+     * @property {number} page - page number is representing.
+     * @property {string} href - page relative url.
+     */
+    /**
+     * Pagination pages array
+     * @type {Page[]}
+     */
     items: {
       type: Array,
       default: () => ([]),
@@ -12,6 +22,9 @@ export default {
         && (!Reflect.has(obj, 'href')
         || typeof obj.href === 'string')),
     },
+    /**
+      * The current page where the user is
+      */
     currentPage: {
       type: Number,
       required: true,
