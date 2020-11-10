@@ -7,8 +7,10 @@ export default {
       type: Array,
       default: () => ([]),
       required: true,
-      validator: (value) => value.every((obj) => !Reflect.has(obj, 'page')
-        || Number.isInteger(obj.page)),
+      validator: (value) => value.every((obj) => (!Reflect.has(obj, 'page')
+        || Number.isInteger(obj.page))
+        && (!Reflect.has(obj, 'href')
+        || typeof obj.href === 'string')),
     },
     currentPage: {
       type: Number,
@@ -16,20 +18,31 @@ export default {
       default: 1,
     },
   },
-  render(h, { props }) {
+  render(h, { props, listeners }) {
     const { items, currentPage } = props;
-    const pageItem = ({ page }) => {
+    const { change: onChange } = listeners;
+
+    const pageItem = ({ page, href }) => {
       const ariaLabel = currentPage === page
         ? `Current page, ${page}`
         : `Goto page ${page}`;
 
       const ariaCurrent = currentPage === page;
+      const liContent = currentPage === page
+        ? page
+        : (<a
+            href={ href }
+            onClick={ onChange.bind(this, { to: page, href }) }
+          >{ page }</a>);
 
       return (
         <li
-          aria-label={ariaLabel}
-          aria-current={ariaCurrent}
-        >{ page }</li>);
+          aria-label={ ariaLabel }
+          aria-current={ ariaCurrent }
+        >
+          { liContent }
+        </li>
+      );
     };
 
     return (
