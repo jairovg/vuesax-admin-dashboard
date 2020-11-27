@@ -1,4 +1,6 @@
 <script>
+import styles from '~/assets/styles/components/pagination.module.scss';
+
 export default {
   name: 'Pagination',
   functional: true,
@@ -35,21 +37,32 @@ export default {
     const { items, currentPage } = props;
     const { change: onChange } = listeners;
 
-    const pageItem = ({ page, href }) => {
+    const pageItem = ({ page, href }, ix) => {
+      const liClasses = ([
+        styles.pagination__page,
+        {
+          [styles['pagination__page--is-current']]: currentPage === page,
+          [styles['pagination__page--is-first']]: ix === 0,
+          [styles['pagination__page--is-last']]: ix === items.length - 1,
+        },
+      ]);
+
       const ariaLabel = currentPage === page
         ? `Current page, ${page}`
         : `Goto page ${page}`;
-
       const ariaCurrent = currentPage === page;
+
       const liContent = currentPage === page
         ? page
         : (<a
+            class={ styles['pagination__page-link'] }
             href={ href }
             onClick={ onChange.bind(this, { to: page, href }) }
           >{ page }</a>);
 
       return (
         <li
+          class={ liClasses }
           aria-label={ ariaLabel }
           aria-current={ ariaCurrent }
         >
@@ -60,7 +73,7 @@ export default {
 
     return (
       <nav aria-label="Pagination Navigation">
-        <ul>
+        <ul class={ styles.pagination }>
           { items.map(pageItem) }
         </ul>
       </nav>
