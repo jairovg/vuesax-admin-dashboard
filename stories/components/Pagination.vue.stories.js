@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import { action } from '@storybook/addon-actions';
 import Pagination from '~/components/Pagination.vue';
 
 export default {
@@ -22,7 +24,10 @@ export const Default = (args, { argTypes }) => ({
   components: { Pagination },
   props: Object.keys(argTypes),
   render() {
-    const onChange = () => {};
+    const onChange = (page, event) => {
+      event.preventDefault();
+      action('onChange')(event);
+    };
 
     return (
       <Pagination
