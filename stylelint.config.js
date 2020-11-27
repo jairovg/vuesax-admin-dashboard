@@ -6,4 +6,12 @@ module.exports = {
   ignoreFiles: [
     'src/assets/styles/tokens.scss',
   ],
+  rules: {
+    'max-nesting-depth': [
+      2,
+      {
+        ignore: ['pseudo-classes'],
+      },
+    ],
+  },
 };
